@@ -7,3 +7,6 @@ Comments:
     <%= link_to comment.user.username, user_path(comment.user) %> said
     <%= comment.content %>
   <% end %>
+
+
+<!-- because a post has many users thru comments, we have to iterate thru each of the post's comment to get the user, and thru the user the username -->
